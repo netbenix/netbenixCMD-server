@@ -4,6 +4,8 @@
 #include<arpa/inet.h>	//inet_addr
 #include<unistd.h>	//write
 
+#define CLI_VERSION "0.2.2"
+
 int main(int argc , char *argv[])
 {
 	int socket_desc , client_sock , c , read_size;
@@ -53,7 +55,7 @@ int main(int argc , char *argv[])
 		{
     	    char version_ok[2000] = "VERSION_OK";
 			char version_old[2000] = "VERSION_OUTDATED";
-    	    if(!strcmp(client_message, "0.2.0")){
+    	    if(!strcmp(client_message, CLI_VERSION)){
     	        write(client_sock , version_ok, strlen(version_ok));
     	    } else {
     	        write(client_sock , version_old, strlen(version_old));
