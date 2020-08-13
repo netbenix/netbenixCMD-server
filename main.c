@@ -4,7 +4,7 @@
 #include<arpa/inet.h>	//inet_addr
 #include<unistd.h>	//write
 
-#define CLI_VERSION "0.2.2"
+#define CLI_VERSION "0.2.3"
 
 int main(int argc , char *argv[])
 {
