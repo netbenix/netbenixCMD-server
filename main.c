@@ -5,7 +5,7 @@
 #include<arpa/inet.h>	//inet_addr
 #include<unistd.h>	//write
 
-#define CLI_VERSION "0.2.6"
+#define CLI_VERSION "0.3.1"
 
 
 char* getTime(){
